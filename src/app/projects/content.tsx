@@ -1,14 +1,17 @@
+'use client';
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import ImageModal from './modal';
 
 const projects = [
   {
-    title: 'Project One',
-    description: 'A brief description of Project One.',
-    technologies: ['React', 'Node.js'],
-    link: 'https://project-one.example.com',
-    repo: 'https://github.com/username/project-one',
-    screenshot: '/path/to/screenshot1.png'
+    title: 'Line Bot Development',
+    description:
+      'Developed a Line bot for tracking user expenses. The bot is built using JavaScript and is hosted on Firebase. It triggers specific functions to manage expense and income data which uses Oracle ADW for data storage.',
+    technologies: ['JavaScript', 'NodeJS', 'Firebase', 'Oracle ADW'],
+    link: 'https://line.me/ti/p/%40923pyyrh',
+    repo: undefined,
+    screenshots: ['/img/linebot-1.png', '/img/linebot-2.png']
   },
   {
     title: 'Project Two',
@@ -16,12 +19,21 @@ const projects = [
     technologies: ['React', 'Node.js'],
     link: 'https://project-one.example.com',
     repo: 'https://github.com/username/project-one',
-    screenshot: '/path/to/screenshot1.png'
+    screenshots: ['/path/to/screenshot1.png']
   }
-  // Add more projects here
 ];
 
 export default function MyProjects() {
+  const [selectedImage, setSelectedImage] = React.useState<string | undefined>(undefined);
+
+  const openImageModal = (imgSrc: string | undefined) => {
+    setSelectedImage(imgSrc);
+  };
+
+  const closeImageModal = () => {
+    setSelectedImage(undefined);
+  };
+
   return (
     <main className="flex min-h-screen flex-col p-12">
       <div>
@@ -37,8 +49,20 @@ export default function MyProjects() {
             </CardHeader>
             <CardContent>
               <p>{project.description}</p>
-              <p className="font-semibold">Technologies Used: {project.technologies.join(', ')}</p>
-              {project.screenshot && <img src={project.screenshot} alt={project.title} className="my-4 w-full max-w-md" />}
+              <p className="font-semibold">Technologies: {project.technologies.join(', ')}</p>
+
+              <div className="m-3 flex flex-wrap gap-3">
+                {project.screenshots.map((src, idx) => (
+                  <img
+                    key={idx}
+                    src={src}
+                    alt={project.title}
+                    className="h-32 w-32 cursor-pointer object-cover"
+                    onClick={() => openImageModal(src)}
+                  />
+                ))}
+              </div>
+
               <div className="mt-4">
                 <a href={project.link} className="mr-4 text-blue-600 hover:underline">
                   Live Site
@@ -51,6 +75,7 @@ export default function MyProjects() {
           </Card>
         ))}
       </div>
+      <ImageModal isOpen={!!selectedImage} onClose={closeImageModal} imgSrc={selectedImage} />
     </main>
   );
 }
