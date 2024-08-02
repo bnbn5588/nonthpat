@@ -10,8 +10,9 @@ import {
 } from './ui/navigation-menu';
 import { navigationMenuTriggerStyle } from '@/components/ui/navigation-menu';
 import { IoHomeSharp, IoCloudDownloadSharp } from 'react-icons/io5';
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
-const resumeLink = 'https://1drv.ms/b/c/16c82be0f342f7f2/EfL3QvPgK8gggBZqGwAAAAABj7gXJHyk1UqVIQ5BHFjcYg?e=9h8DaK';
+const resumeLink = 'https://drive.google.com/file/d/1yv4Q2_Q_L8yj7Kacewr3HGLm46nATo_Q/view?usp=sharing';
 
 export default function Header() {
   return (
@@ -21,14 +22,17 @@ export default function Header() {
           <div>
             <h1 className="text-3xl font-bold">Nonthpat Wongkham</h1>
             <p>Database Admin | Software Engineer</p>
-            <div className="mt-2">
-              <a href="mailto:nonthpatw@gmail.com" className="mr-4 hover:underline">
+            <div className="mt-2 flex items-center space-x-4">
+              <a href="mailto:nonthpatw@gmail.com" className="flex items-center hover:underline">
+                <FaEnvelope className="mr-2 text-gray-500" />
                 Email
               </a>
-              <a href="https://www.linkedin.com/in/nonthpat-wongkham-845351154/" className="mr-4 hover:underline">
+              <a href="https://www.linkedin.com/in/nonthpat-wongkham-845351154/" className="flex items-center hover:underline">
+                <FaLinkedin className="mr-2 text-blue-600" />
                 LinkedIn
               </a>
-              <a href="https://github.com/bnbn5588" className="mr-4 hover:underline">
+              <a href="https://github.com/bnbn5588" className="flex items-center hover:underline">
+                <FaGithub className="mr-2 text-gray-900" />
                 GitHub
               </a>
             </div>
