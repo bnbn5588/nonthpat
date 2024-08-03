@@ -3,6 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { ChevronsUpDown } from 'lucide-react';
+import Link from 'next/link';
 import React from 'react';
 
 export default function HomePage() {
@@ -10,9 +11,19 @@ export default function HomePage() {
     <main className="flex min-h-screen flex-col p-12">
       <div id="about" className="mb-5">
         <h2 className="mb-4 text-2xl font-bold">About Me</h2>
-        <p>
+        <p className="mb-4 indent-8">
           I am an experienced Database Administrator, Android Developer, and Web Developer with a strong background in database
-          management, automation, and application development.
+          management, automation, and application development. My expertise includes working with technologies such as SQL,
+          Kotlin, Java, AngularJS, NodeJS, and NextJS.
+        </p>
+
+        <p className="mt-6">
+          Several projects showcasing my work are presented on the{' '}
+          <Link href="\projects" className="text-blue-600 hover:underline">
+            {' >>'}
+            Projects{'<< '}
+          </Link>
+          page. Please feel free to visit and explore them more.
         </p>
       </div>
 
