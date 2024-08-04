@@ -8,13 +8,24 @@ const projects = [
   {
     title: 'Line Bot Development',
     description:
-      'Developed a Line bot for tracking user expenses. The bot is built using JavaScript and is hosted on Firebase. It triggers specific functions to manage expense and income data which uses Oracle ADW for data storage.',
-    technologies: ['JavaScript', 'NodeJS', 'Firebase', 'Oracle ADW'],
+      'Developed a simple Line bot for tracking user expenses. The bot is built using JavaScript and is hosted on Firebase. It triggers specific functions to manage expense and income data which uses Oracle Autonomous Transaction Processing for data storage, which is a fully automated database service.',
+    technologies: ['JavaScript', 'NodeJS', 'Firebase', 'Oracle ATP'],
     link: 'https://line.me/ti/p/%40923pyyrh',
     linkDes: 'Chat with LineBot',
     repo: undefined,
     largeImages: ['/img/linebot-1.png', '/img/linebot-2.png'],
     smallImages: ['/img/linebot-1_sm.png', '/img/linebot-2_sm.png']
+  },
+  {
+    title: 'Android Development',
+    description:
+      'Developed an Android application that displays real-time data from a surveillance system with various visualizations. The application integrates with the Google Sheets API to fetch sensor data and the Opendata API to provide additional real-time weather conditions. This project involved creating a user-friendly interface to present data in an easily digestible format, enabling users to monitor environmental conditions effectively.',
+    technologies: ['Kotlin', 'XML', 'Google API', 'Opendata API'],
+    link: 'https://github.com/bnbn5588/ESG_apk',
+    linkDes: 'APK file',
+    repo: undefined,
+    largeImages: ['/img/ESG-1.png', '/img/ESG-2.png', '/img/ESG-3.png', '/img/ESG-4.png', '/img/ESG-5.png'],
+    smallImages: ['/img/ESG-1_sm.png', '/img/ESG-2_sm.png', '/img/ESG-3_sm.png', '/img/ESG-4_sm.png', '/img/ESG-5_sm.png']
   }
 ];
 
@@ -55,11 +66,21 @@ export default function MyProjects() {
               </div>
 
               <div className="mt-4">
-                <a href={project.link} className="mr-4 text-blue-600 hover:underline">
-                  {project?.linkDes}
-                </a>
-                {project.repo && (
-                  <a href={project.repo} className="text-gray-900 hover:underline">
+                {project.link ? (
+                  <a href={project.link} className="mr-4 text-blue-600 visited:text-purple-600 hover:underline">
+                    {project?.linkDes}
+                  </a>
+                ) : (
+                  <a href={project.link} className="pointer-events-none mr-4 text-slate-300">
+                    Site not found
+                  </a>
+                )}
+                {project.repo ? (
+                  <a href={project.repo} className="text-gray-900 visited:text-purple-600 hover:underline">
+                    Repository
+                  </a>
+                ) : (
+                  <a href={project.repo} className="pointer-events-none text-slate-300">
                     Repository
                   </a>
                 )}

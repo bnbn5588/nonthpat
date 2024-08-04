@@ -9,7 +9,7 @@ export default function MyContact() {
       <div id="info" className="flex flex-col gap-4">
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl font-bold">Contact Info & Social Media</CardTitle>
+            <CardTitle className="text-2xl font-bold">Contact Info</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
