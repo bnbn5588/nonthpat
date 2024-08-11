@@ -13,8 +13,8 @@ const projects = [
     link: 'https://line.me/ti/p/%40923pyyrh',
     linkDes: 'Chat with LineBot',
     repo: undefined,
-    largeImages: ['/img/linebot-1.png', '/img/linebot-2.png'],
-    smallImages: ['/img/linebot-1_sm.png', '/img/linebot-2_sm.png']
+    largeImages: ['/img/linebot-1.png', '/img/linebot-2.png', '/img/linebot-3.png'],
+    smallImages: ['/img/linebot-1_sm.png', '/img/linebot-2_sm.png', '/img/linebot-3_sm.png']
   },
   {
     title: 'Android Development',
