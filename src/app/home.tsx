@@ -5,6 +5,10 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/component
 import { ChevronsUpDown } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
+import { FaTools } from 'react-icons/fa';
+import { GrAchievement } from 'react-icons/gr';
+import { HiAcademicCap, HiBriefcase } from 'react-icons/hi';
+import { PiCertificateBold } from 'react-icons/pi';
 
 export default function HomePage() {
   return (
@@ -33,6 +37,7 @@ export default function HomePage() {
             <CollapsibleTrigger>
               <CardHeader>
                 <div className="flex items-center justify-between gap-4 hover:text-blue-900 hover:underline">
+                  <HiBriefcase className="h-6 w-6 text-blue-700" />
                   <CardTitle className="text-2xl font-bold">Experience</CardTitle> <ChevronsUpDown className="h-4 w-4" />
                 </div>
               </CardHeader>
@@ -42,7 +47,7 @@ export default function HomePage() {
                 <ul className="list-outside">
                   <li className="mb-4">
                     <h3 className="font-bold">Android Developer Intern @ C-Link Technology, Taiwan</h3>
-                    <p className="font-light italic">Aug 2023 – Dec 2023</p>
+                    <p className="font-light italic">Aug 2023 – Dec 2023 (5 months)</p>
                     <ul className="list-inside list-disc">
                       <li>Participated in TCA program event and conducted presentations</li>
                       <li>
@@ -54,7 +59,7 @@ export default function HomePage() {
 
                   <li className="mb-4">
                     <h3 className="font-bold">Automation Engine Integration Analyst @ ExxonMobil, Thailand</h3>
-                    <p className="font-light italic">Aug 2021 – Jul 2022</p>
+                    <p className="font-light italic">Aug 2021 – Jul 2022 (11 months)</p>
                     <ul className="list-inside list-disc">
                       <li>Managed Automic Automation Engine (UC4) and provided global user support</li>
                       <li>Developed and enhanced job automation services</li>
@@ -66,7 +71,7 @@ export default function HomePage() {
 
                   <li className="mb-4">
                     <h3 className="font-bold">Oracle Database Administrator @ MFEC (System Integrator), Thailand</h3>
-                    <p className="font-light italic">Jul 2019 – Aug 2021</p>
+                    <p className="font-light italic">Jul 2019 – Aug 2021 (2 years)</p>
                     <ul className="list-inside list-disc">
                       <li>Supported several Thai enterprise businesses (Bank, Insurance, credit card)</li>
                       <li>Implemented the scripts to automate regular Oracle DBA tasks (Tuning, Patching, Monitoring)</li>
@@ -85,10 +90,11 @@ export default function HomePage() {
         </Card>
 
         <Card id="education">
-          <Collapsible>
+          <Collapsible defaultOpen={true}>
             <CollapsibleTrigger>
               <CardHeader>
                 <div className="flex items-center justify-between gap-4 hover:text-blue-900 hover:underline">
+                  <HiAcademicCap className="h-6 w-6 text-blue-700" />
                   <CardTitle className="text-2xl font-bold">Education</CardTitle>
                   <ChevronsUpDown className="h-4 w-4" />
                 </div>
@@ -156,10 +162,11 @@ export default function HomePage() {
         </Card>
 
         <Card id="achievement">
-          <Collapsible>
+          <Collapsible defaultOpen={true}>
             <CollapsibleTrigger>
               <CardHeader>
                 <div className="flex items-center justify-between gap-4 hover:text-blue-900 hover:underline">
+                  <GrAchievement className="h-6 w-6 text-blue-700" />
                   <CardTitle className="text-2xl font-bold">Achievements and Publications</CardTitle>
                   <ChevronsUpDown className="h-4 w-4" />
                 </div>
@@ -168,6 +175,24 @@ export default function HomePage() {
             <CollapsibleContent>
               <CardContent>
                 <ul>
+                  <li className="mb-4">
+                    <h3 className="font-bold hover:underline">
+                      <a
+                        href="#"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.open(
+                            'doc/TCA_cert.pdf',
+                            'TCA Certificate',
+                            'width=800, height=600, scrollbars=yes, resizable=yes'
+                          );
+                        }}
+                      >
+                        Participation in TCA Internship program
+                      </a>
+                    </h3>
+                    <p>Completed in Nov 2023</p>
+                  </li>
                   <li className="mb-4">
                     <h3 className="font-bold hover:underline">
                       <a
@@ -209,25 +234,6 @@ export default function HomePage() {
                     </h3>
                     <p>Published in IEEE, 2019</p>
                   </li>
-
-                  <li className="mb-4">
-                    <h3 className="font-bold hover:underline">
-                      <a
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          window.open(
-                            'doc/TCA_cert.pdf',
-                            'TCA Certificate',
-                            'width=800, height=600, scrollbars=yes, resizable=yes'
-                          );
-                        }}
-                      >
-                        Participation in TCA Internship program
-                      </a>
-                    </h3>
-                    <p>Completed in Nov 2023</p>
-                  </li>
                 </ul>
               </CardContent>
             </CollapsibleContent>
@@ -235,10 +241,11 @@ export default function HomePage() {
         </Card>
 
         <Card id="certifications">
-          <Collapsible>
+          <Collapsible defaultOpen={true}>
             <CollapsibleTrigger>
               <CardHeader>
                 <div className="flex items-center justify-between gap-4 hover:text-blue-900 hover:underline">
+                  <PiCertificateBold className="h-6 w-6 text-blue-700" />
                   <CardTitle className="text-2xl font-bold">Certifications</CardTitle>
                   <ChevronsUpDown className="h-4 w-4" />
                 </div>
@@ -261,10 +268,11 @@ export default function HomePage() {
         </Card>
 
         <Card id="skills">
-          <Collapsible>
+          <Collapsible defaultOpen={true}>
             <CollapsibleTrigger>
               <CardHeader>
                 <div className="flex items-center justify-between gap-4 hover:text-blue-900 hover:underline">
+                  <FaTools className="h-6 w-6 text-blue-700" />
                   <CardTitle className="text-2xl font-bold">Skills</CardTitle>
                   <ChevronsUpDown className="h-4 w-4" />
                 </div>

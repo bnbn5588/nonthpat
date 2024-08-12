@@ -13,8 +13,8 @@ const projects = [
     link: 'https://line.me/ti/p/%40923pyyrh',
     linkDes: 'Chat with LineBot',
     repo: undefined,
-    largeImages: ['/img/linebot-1.png', '/img/linebot-2.png', '/img/linebot-3.png'],
-    smallImages: ['/img/linebot-1_sm.png', '/img/linebot-2_sm.png', '/img/linebot-3_sm.png']
+    largeImages: ['/img/linebot/linebot-1.png', '/img/linebot/linebot-2.png', '/img/linebot/linebot-3.png'],
+    smallImages: ['/img/linebot/linebot-1_sm.png', '/img/linebot/linebot-2_sm.png', '/img/linebot/linebot-3_sm.png']
   },
   {
     title: 'Android Development',
@@ -24,8 +24,14 @@ const projects = [
     link: 'https://github.com/bnbn5588/ESG_apk',
     linkDes: 'APK file',
     repo: undefined,
-    largeImages: ['/img/ESG-1.png', '/img/ESG-2.png', '/img/ESG-3.png', '/img/ESG-4.png', '/img/ESG-5.png'],
-    smallImages: ['/img/ESG-1_sm.png', '/img/ESG-2_sm.png', '/img/ESG-3_sm.png', '/img/ESG-4_sm.png', '/img/ESG-5_sm.png']
+    largeImages: ['/img/ESG/ESG-1.png', '/img/ESG/ESG-2.png', '/img/ESG/ESG-3.png', '/img/ESG/ESG-4.png', '/img/ESG/ESG-5.png'],
+    smallImages: [
+      '/img/ESG/ESG-1_sm.png',
+      '/img/ESG/ESG-2_sm.png',
+      '/img/ESG/ESG-3_sm.png',
+      '/img/ESG/ESG-4_sm.png',
+      '/img/ESG/ESG-5_sm.png'
+    ]
   }
 ];
 
