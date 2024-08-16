@@ -32,6 +32,17 @@ const projects = [
       '/img/ESG/ESG-4_sm.png',
       '/img/ESG/ESG-5_sm.png'
     ]
+  },
+  {
+    title: 'Backend Development Project: Task Management API',
+    description:
+      'This project is a simple Task Management API developed to showcase backend development skills. It provides basic CRUD (Create, Read, Update, Delete) operations for managing tasks, utilizing a PostgreSQL database. The API is deployed on Vercel, demonstrating seamless integration and deployment of serverless functions.',
+    technologies: ['NodeJS', 'Vercel', 'Express.js', 'PostgreSQL'],
+    link: 'https://todo-api-xi-mocha.vercel.app/api/tasks',
+    linkDes: 'Try the Endpoint',
+    repo: 'https://github.com/bnbn5588/todo-api',
+    largeImages: ['/img/toDo/toDo-1.png'],
+    smallImages: ['/img/toDo/toDo-1_sm.png']
   }
 ];
 
