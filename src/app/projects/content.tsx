@@ -50,10 +50,10 @@ const projects = [
       'This project involved applying machine learning techniques to analyze IMDB data, focusing on classification tasks. The project demonstrates proficiency in data preprocessing, model selection, and performance evaluation. A hybrid model combining CNN (Convolutional Neural Network) and LSTM (Long Short-Term Memory) was employed, achieving the highest accuracy in initial experiments. The hybrid model efficiently processes sequential data and extracts relevant features, potentially reducing training time. However, in tasks where input data transformations lose the original meaning of words in sequences, a standalone CNN may be the better choice.',
     technologies: ['Python', 'Scikit-Learn', 'Pandas', 'NumPy', 'Matplotlib'],
     link: 'https://drive.google.com/file/d/1tMw8Jzqr5Uw2rAJZ_VTi8XTnkgkrBcxq/view?usp=sharing',
-    linkDes: 'IEEE paper',
-    repo: 'https://drive.google.com/file/d/1foeGieJknS4C26A6kAVTQ82hslSBVdIh/view?usp=sharing', // If you have a repository, you can add the link here.
-    largeImages: ['/img/sentiment/sentiment_1.png'],
-    smallImages: ['/img/sentiment/sentiment_1_sm.png']
+    linkDes: 'Report',
+    repo: 'https://drive.google.com/file/d/1foeGieJknS4C26A6kAVTQ82hslSBVdIh/view?usp=sharing',
+    largeImages: ['/img/sentiment/sentiment_1.png', '/img/sentiment/sentiment_2.png'],
+    smallImages: ['/img/sentiment/sentiment_1_sm.png', '/img/sentiment/sentiment_2_sm.png']
   }
 ];
 
