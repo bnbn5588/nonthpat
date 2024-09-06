@@ -254,13 +254,106 @@ export default function HomePage() {
             <CollapsibleContent>
               <CardContent>
                 <ul className="ml-4 list-outside list-decimal">
-                  <li>Oracle Database SQL Certified Associate, 2019</li>
-                  <li>Oracle Database 12c Administrator Certified Associate, 2019</li>
-                  <li>Oracle Cloud Infrastructure Foundations 2021 Certified Associate, 2021</li>
-                  <li>Oracle Cloud Infrastructure 2021 Certified Architect Associate, 2021</li>
-                  <li>Oracle Cloud Infrastructure Developer 2021 Certified Associate, 2021</li>
-                  <li>Oracle Cloud Infrastructure 2021 Certified Cloud Operations Associate, 2021</li>
-                  <li>Oracle Autonomous Database Cloud 2021 Certified Specialist, 2021</li>
+                  <li>
+                    <p className="hover:font-bold hover:underline">
+                      <a href="https://www.credly.com/badges/3cd6645a-1f84-49cd-ac15-eabcc49815d8/">
+                        Oracle Database SQL Certified Associate, 2019
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <p className="hover:font-bold hover:underline">
+                      <a href="https://www.credly.com/badges/cec3b7f0-fb52-4833-a3e6-37fbbb12c881/">
+                        Oracle Database 12c Administrator Certified Associate, 2019
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <p className="hover:font-bold hover:underline">
+                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=649DA108CE13F606455778E4F9FAB1F4DBF94D2B72DA6DD121D5922FE60C8691">
+                        Oracle Cloud Infrastructure Foundations 2021 Certified Associate, 2021
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <p className="hover:font-bold hover:underline">
+                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=E93F5F58652034FA392906BF119A4E3BEDF9ECD42363BE424A95BB3C9DB5F208">
+                        Oracle Cloud Infrastructure 2021 Certified Architect Associate, 2021
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <p className="hover:font-bold hover:underline">
+                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=3AAC18805786E478E7BC4EB0838E1155E80B17614DEA2A079C5C0D8AB3FFBE5F">
+                        Oracle Cloud Infrastructure Developer 2021 Certified Associate, 2021
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <p className="hover:font-bold hover:underline">
+                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=6AAC51B35D3D238BEF379D49D7CFFA71FE3DEE4619115DBBFA503A3DFE90014A">
+                        Oracle Cloud Infrastructure 2021 Certified Cloud Operations Associate, 2021
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <p className="hover:font-bold hover:underline">
+                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=ACD97A431F2B677ABF18C4B5B3C2A408199678013048D7A28B5219BB5495A4BF">
+                        Oracle Autonomous Database Cloud 2021 Certified Specialist, 2021
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <p className="hover:font-bold hover:underline">
+                      <a
+                        href="#"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.open(
+                            'doc/Coursera DHGC5DEQC81T.pdf',
+                            'DHGC5DEQC81T Certificate',
+                            'width=800, height=600, scrollbars=yes, resizable=yes'
+                          );
+                        }}
+                      >
+                        Coursera: IBM Data Engineering Certificate, 2024
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <p className="hover:font-bold hover:underline">
+                      <a
+                        href="#"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.open(
+                            'doc/Coursera RCHYXZS8WX96.pdf',
+                            'RCHYXZS8WX96 Certificate',
+                            'width=800, height=600, scrollbars=yes, resizable=yes'
+                          );
+                        }}
+                      >
+                        Coursera: Meta Back-End Developer Certificate, 2024
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <p className="hover:font-bold hover:underline">
+                      <a
+                        href="#"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.open(
+                            'doc/Coursera 1HZ93EYS1G9N.pdf',
+                            '1HZ93EYS1G9N Certificate',
+                            'width=800, height=600, scrollbars=yes, resizable=yes'
+                          );
+                        }}
+                      >
+                        Coursera: Google Data Analytics Professional Certificate, 2024
+                      </a>
+                    </p>
+                  </li>
                 </ul>
               </CardContent>
             </CollapsibleContent>
