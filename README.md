@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nonthpat Wongkham — Personal Portfolio
+
+Personal portfolio website built with Next.js 14, showcasing professional experience, projects, and contact information. Deployed on Vercel.
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 14 (App Router) + TypeScript |
+| Styling | Tailwind CSS + shadcn/ui (Radix UI) |
+| Icons | Lucide React, React Icons |
+| Analytics | Vercel Analytics + Speed Insights |
+| Deployment | Vercel |
+
+## Pages
+
+| Route | Description |
+|---|---|
+| `/` | About Me, Experience, Education, Achievements, Certifications, Skills |
+| `/projects` | Showcase of 4 projects with screenshots and links |
+| `/contact` | Email, Phone, LinkedIn, GitHub |
+
+## Projects Showcased
+
+1. **Line Bot Development** — Expense tracking bot using JavaScript, NodeJS, Firebase, and Oracle ATP
+2. **Android Development** — Surveillance data app using Kotlin, Google Sheets API, and Opendata API
+3. **Backend API** — Task Management REST API using NodeJS, Express.js, and PostgreSQL on Vercel
+4. **IMDB Sentiment Analysis** — CNN+LSTM hybrid model using Python, Scikit-Learn, Pandas, and NumPy
+
+## Features
+
+- Dark mode toggle with `localStorage` persistence and `prefers-color-scheme` support
+- Dynamic Open Graph image for link previews on LinkedIn, Twitter, etc.
+- Per-page SEO metadata with `title` template
+- Auto-generated `/sitemap.xml` and `/robots.txt` for search engine crawling
+- Active navigation state highlighting current page
+- Responsive layout (`p-6` on mobile, `p-12` on desktop)
+- Vercel Analytics and Speed Insights for performance monitoring
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── layout.tsx           # Root layout with global metadata
+│   ├── page.tsx             # Home entry point
+│   ├── home.tsx             # Home page content
+│   ├── opengraph-image.tsx  # Dynamic OG image
+│   ├── sitemap.ts           # Auto-generated sitemap.xml
+│   ├── robots.ts            # Auto-generated robots.txt
+│   ├── projects/            # /projects route
+│   └── contact/             # /contact route
+├── components/
+│   ├── header.tsx           # Navigation header
+│   ├── footer.tsx           # Footer
+│   ├── theme-toggle.tsx     # Dark mode toggle
+│   └── ui/                  # shadcn/ui components
+└── lib/
+    └── utils.ts             # cn() utility
+public/
+├── img/                     # Project screenshots
+└── doc/                     # PDF certificates and documents
+```
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Deployed on Vercel. The `VERCEL_URL` environment variable is used automatically to generate correct sitemap and OG image URLs in production.

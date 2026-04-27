@@ -1,4 +1,8 @@
+'use client';
+
+import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React from 'react';
 import {
   NavigationMenu,
@@ -11,10 +15,13 @@ import {
 import { navigationMenuTriggerStyle } from '@/components/ui/navigation-menu';
 import { IoHomeSharp, IoCloudDownloadSharp } from 'react-icons/io5';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
+import ThemeToggle from './theme-toggle';
 
 const resumeLink = 'https://drive.google.com/file/d/1yv4Q2_Q_L8yj7Kacewr3HGLm46nATo_Q/view?usp=sharing';
 
 export default function Header() {
+  const pathname = usePathname();
+
   return (
     <>
       <header className="bg-blue-900 p-6 text-white">
@@ -27,22 +34,23 @@ export default function Header() {
                 <FaEnvelope className="mr-2 text-gray-500" />
                 Email
               </a>
-              <a href="https://www.linkedin.com/in/nonthpat-wongkham-845351154/" className="flex items-center hover:underline">
+              <a href="https://www.linkedin.com/in/nonthpat-wongkham-845351154/" className="flex items-center hover:underline" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="mr-2 text-blue-600" />
                 LinkedIn
               </a>
-              <a href="https://github.com/bnbn5588" className="flex items-center hover:underline">
+              <a href="https://github.com/bnbn5588" className="flex items-center hover:underline" target="_blank" rel="noopener noreferrer">
                 <FaGithub className="mr-2 text-gray-900" />
                 GitHub
               </a>
             </div>
           </div>
-          <div className="content-center text-blue-900">
+          <div className="flex items-center gap-2 text-blue-900">
+            <ThemeToggle />
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <Link href="/" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()} aria-label="Home">
+                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), pathname === '/' && 'bg-accent')} aria-label="Home">
                       <IoHomeSharp />
                     </NavigationMenuLink>
                   </Link>
@@ -82,6 +90,8 @@ export default function Header() {
                           <a
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                             href={resumeLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
                           >
                             <div className="mb-2 mt-4 flex items-center gap-2 text-lg font-medium">
                               <span>My Resume </span> <IoCloudDownloadSharp />
@@ -98,7 +108,7 @@ export default function Header() {
 
                 <NavigationMenuItem>
                   <Link href="/contact" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>Contact</NavigationMenuLink>
+                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), pathname === '/contact' && 'bg-accent')}>Contact</NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
               </NavigationMenuList>

@@ -12,7 +12,7 @@ import { PiCertificateBold } from 'react-icons/pi';
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col p-12">
+    <main className="flex min-h-screen flex-col p-6 md:p-12">
       <div id="about" className="mb-5">
         <h2 className="mb-4 text-2xl font-bold">About Me</h2>
         <p className="mb-4 indent-8">
@@ -104,7 +104,7 @@ export default function HomePage() {
               <CardContent>
                 <ul className="list-outside">
                   <li className="mb-4">
-                    <h3 className="font-bold">Master’s degree, National Taiwan University of Secience and Technology (NTUST)</h3>
+                    <h3 className="font-bold">Master’s degree, National Taiwan University of Science and Technology (NTUST)</h3>
                     <p className="font-light italic">Aug 2022 – Aug 2024</p>
                     <ul className="list-inside list-disc">
                       <li>
@@ -177,17 +177,7 @@ export default function HomePage() {
                 <ul>
                   <li className="mb-4">
                     <h3 className="font-bold hover:underline">
-                      <a
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          window.open(
-                            'doc/TCA_cert.pdf',
-                            'TCA Certificate',
-                            'width=800, height=600, scrollbars=yes, resizable=yes'
-                          );
-                        }}
-                      >
+                      <a href="/doc/TCA_cert.pdf" target="_blank" rel="noopener noreferrer">
                         Participation in TCA Internship program
                       </a>
                     </h3>
@@ -195,17 +185,7 @@ export default function HomePage() {
                   </li>
                   <li className="mb-4">
                     <h3 className="font-bold hover:underline">
-                      <a
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          window.open(
-                            'doc/dean_award.pdf',
-                            "Dean's Award",
-                            'width=800, height=600, scrollbars=yes, resizable=yes'
-                          );
-                        }}
-                      >
+                      <a href="/doc/dean_award.pdf" target="_blank" rel="noopener noreferrer">
                         Dean’s Award (Highest GPA - 4.0)
                       </a>
                     </h3>
@@ -213,13 +193,7 @@ export default function HomePage() {
                   </li>
                   <li className="mb-4">
                     <h3 className="font-bold hover:underline">
-                      <a
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          window.open('doc/jcsse_2019.pdf', 'JCSSE 2019', 'width=800, height=600, scrollbars=yes, resizable=yes');
-                        }}
-                      >
+                      <a href="/doc/jcsse_2019.pdf" target="_blank" rel="noopener noreferrer">
                         Participation in International Joint Conference on Computer Science and Software Engineering (JCSSE 2019)
                       </a>
                     </h3>
@@ -227,7 +201,7 @@ export default function HomePage() {
                   </li>
                   <li className="mb-4">
                     <h3 className="font-bold hover:underline">
-                      <a href="https://ieeexplore.ieee.org/abstract/document/8864192">
+                      <a href="https://ieeexplore.ieee.org/abstract/document/8864192" target="_blank" rel="noopener noreferrer">
                         Published a conference paper &quot;WhatTheHealth: An Android Application for Consumers of Healthy
                         Food&quot;
                       </a>
@@ -256,100 +230,70 @@ export default function HomePage() {
                 <ul className="ml-4 list-outside list-decimal">
                   <li>
                     <p className="hover:font-bold hover:underline">
-                      <a href="https://www.credly.com/badges/3cd6645a-1f84-49cd-ac15-eabcc49815d8/">
+                      <a href="https://www.credly.com/badges/3cd6645a-1f84-49cd-ac15-eabcc49815d8/" target="_blank" rel="noopener noreferrer">
                         Oracle Database SQL Certified Associate, 2019
                       </a>
                     </p>
                   </li>
                   <li>
                     <p className="hover:font-bold hover:underline">
-                      <a href="https://www.credly.com/badges/cec3b7f0-fb52-4833-a3e6-37fbbb12c881/">
+                      <a href="https://www.credly.com/badges/cec3b7f0-fb52-4833-a3e6-37fbbb12c881/" target="_blank" rel="noopener noreferrer">
                         Oracle Database 12c Administrator Certified Associate, 2019
                       </a>
                     </p>
                   </li>
                   <li>
                     <p className="hover:font-bold hover:underline">
-                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=649DA108CE13F606455778E4F9FAB1F4DBF94D2B72DA6DD121D5922FE60C8691">
+                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=649DA108CE13F606455778E4F9FAB1F4DBF94D2B72DA6DD121D5922FE60C8691" target="_blank" rel="noopener noreferrer">
                         Oracle Cloud Infrastructure Foundations 2021 Certified Associate, 2021
                       </a>
                     </p>
                   </li>
                   <li>
                     <p className="hover:font-bold hover:underline">
-                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=E93F5F58652034FA392906BF119A4E3BEDF9ECD42363BE424A95BB3C9DB5F208">
+                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=E93F5F58652034FA392906BF119A4E3BEDF9ECD42363BE424A95BB3C9DB5F208" target="_blank" rel="noopener noreferrer">
                         Oracle Cloud Infrastructure 2021 Certified Architect Associate, 2021
                       </a>
                     </p>
                   </li>
                   <li>
                     <p className="hover:font-bold hover:underline">
-                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=3AAC18805786E478E7BC4EB0838E1155E80B17614DEA2A079C5C0D8AB3FFBE5F">
+                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=3AAC18805786E478E7BC4EB0838E1155E80B17614DEA2A079C5C0D8AB3FFBE5F" target="_blank" rel="noopener noreferrer">
                         Oracle Cloud Infrastructure Developer 2021 Certified Associate, 2021
                       </a>
                     </p>
                   </li>
                   <li>
                     <p className="hover:font-bold hover:underline">
-                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=6AAC51B35D3D238BEF379D49D7CFFA71FE3DEE4619115DBBFA503A3DFE90014A">
+                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=6AAC51B35D3D238BEF379D49D7CFFA71FE3DEE4619115DBBFA503A3DFE90014A" target="_blank" rel="noopener noreferrer">
                         Oracle Cloud Infrastructure 2021 Certified Cloud Operations Associate, 2021
                       </a>
                     </p>
                   </li>
                   <li>
                     <p className="hover:font-bold hover:underline">
-                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=ACD97A431F2B677ABF18C4B5B3C2A408199678013048D7A28B5219BB5495A4BF">
+                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=ACD97A431F2B677ABF18C4B5B3C2A408199678013048D7A28B5219BB5495A4BF" target="_blank" rel="noopener noreferrer">
                         Oracle Autonomous Database Cloud 2021 Certified Specialist, 2021
                       </a>
                     </p>
                   </li>
                   <li>
                     <p className="hover:font-bold hover:underline">
-                      <a
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          window.open(
-                            'doc/Coursera DHGC5DEQC81T.pdf',
-                            'DHGC5DEQC81T Certificate',
-                            'width=800, height=600, scrollbars=yes, resizable=yes'
-                          );
-                        }}
-                      >
+                      <a href="/doc/Coursera DHGC5DEQC81T.pdf" target="_blank" rel="noopener noreferrer">
                         Coursera: IBM Data Engineering Certificate, 2024
                       </a>
                     </p>
                   </li>
                   <li>
                     <p className="hover:font-bold hover:underline">
-                      <a
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          window.open(
-                            'doc/Coursera RCHYXZS8WX96.pdf',
-                            'RCHYXZS8WX96 Certificate',
-                            'width=800, height=600, scrollbars=yes, resizable=yes'
-                          );
-                        }}
-                      >
+                      <a href="/doc/Coursera RCHYXZS8WX96.pdf" target="_blank" rel="noopener noreferrer">
                         Coursera: Meta Back-End Developer Certificate, 2024
                       </a>
                     </p>
                   </li>
                   <li>
                     <p className="hover:font-bold hover:underline">
-                      <a
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          window.open(
-                            'doc/Coursera 1HZ93EYS1G9N.pdf',
-                            '1HZ93EYS1G9N Certificate',
-                            'width=800, height=600, scrollbars=yes, resizable=yes'
-                          );
-                        }}
-                      >
+                      <a href="/doc/Coursera 1HZ93EYS1G9N.pdf" target="_blank" rel="noopener noreferrer">
                         Coursera: Google Data Analytics Professional Certificate, 2024
                       </a>
                     </p>

@@ -59,7 +59,7 @@ const projects = [
 
 export default function MyProjects() {
   return (
-    <main className="flex min-h-screen flex-col p-12">
+    <main className="flex min-h-screen flex-col p-6 md:p-12">
       <div>
         <h2 className="mb-4 text-2xl font-bold">Projects</h2>
         <p className="mb-4 indent-8">

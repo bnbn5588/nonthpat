@@ -5,7 +5,7 @@ import React from 'react';
 
 export default function MyContact() {
   return (
-    <main className="flex min-h-screen flex-col p-12 leading-relaxed">
+    <main className="flex min-h-screen flex-col p-6 leading-relaxed md:p-12">
       <div id="info" className="flex flex-col gap-4">
         <Card>
           <CardHeader>
@@ -29,7 +29,7 @@ export default function MyContact() {
                 <FaLinkedin className="mr-2 text-blue-600" />
                 <p>
                   <span className="font-semibold">LinkedIn:</span>{' '}
-                  <a href="https://www.linkedin.com/in/nonthpat-wongkham-845351154/" className="text-blue-600">
+                  <a href="https://www.linkedin.com/in/nonthpat-wongkham-845351154/" className="text-blue-600" target="_blank" rel="noopener noreferrer">
                     https://www.linkedin.com/in/nonthpat-wongkham-845351154
                   </a>
                 </p>
@@ -38,7 +38,7 @@ export default function MyContact() {
                 <FaGithub className="mr-2 text-gray-900" />
                 <p>
                   <span className="font-semibold">GitHub:</span>{' '}
-                  <a href="https://github.com/bnbn5588" className="text-gray-900">
+                  <a href="https://github.com/bnbn5588" className="text-gray-900" target="_blank" rel="noopener noreferrer">
                     https://github.com/bnbn5588
                   </a>
                 </p>
