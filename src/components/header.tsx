@@ -28,17 +28,27 @@ export default function Header() {
         <div className="container mx-auto flex flex-col justify-between gap-4 md:flex-row">
           <div>
             <h1 className="text-3xl font-bold">Nonthpat Wongkham</h1>
-            <p>Database Admin | Software Engineer</p>
+            <p>Data Engineer | Software Engineer</p>
             <div className="mt-2 flex items-center space-x-4">
               <a href="mailto:nonthpatw@gmail.com" className="flex items-center hover:underline">
                 <FaEnvelope className="mr-2 text-gray-500" />
                 Email
               </a>
-              <a href="https://www.linkedin.com/in/nonthpat-wongkham-845351154/" className="flex items-center hover:underline" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/nonthpat-wongkham-845351154/"
+                className="flex items-center hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedin className="mr-2 text-blue-600" />
                 LinkedIn
               </a>
-              <a href="https://github.com/bnbn5588" className="flex items-center hover:underline" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/bnbn5588"
+                className="flex items-center hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaGithub className="mr-2 text-gray-900" />
                 GitHub
               </a>
@@ -50,7 +60,10 @@ export default function Header() {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <Link href="/" legacyBehavior passHref>
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), pathname === '/' && 'bg-accent')} aria-label="Home">
+                    <NavigationMenuLink
+                      className={cn(navigationMenuTriggerStyle(), pathname === '/' && 'bg-accent')}
+                      aria-label="Home"
+                    >
                       <IoHomeSharp />
                     </NavigationMenuLink>
                   </Link>
@@ -108,7 +121,9 @@ export default function Header() {
 
                 <NavigationMenuItem>
                   <Link href="/contact" legacyBehavior passHref>
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), pathname === '/contact' && 'bg-accent')}>Contact</NavigationMenuLink>
+                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), pathname === '/contact' && 'bg-accent')}>
+                      Contact
+                    </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
               </NavigationMenuList>

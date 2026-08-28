@@ -16,9 +16,12 @@ export default function HomePage() {
       <div id="about" className="mb-5">
         <h2 className="mb-4 text-2xl font-bold">About Me</h2>
         <p className="mb-4 indent-8">
-          I am an experienced Database Administrator, Android Developer, and Web Developer with a strong background in database
-          management, automation, and application development. My expertise includes working with technologies such as SQL,
-          Kotlin, Java, AngularJS, NodeJS, and NextJS.
+          Data Engineer with 5+ years of experience across database engineering, ETL/ELT, cloud data platforms, and enterprise
+          application development. Experienced in designing and operating production data pipelines supporting large-scale
+          marketing analytics, campaign operations, and enterprise loyalty systems. Strong background in SQL, database performance
+          optimization, AWS cloud migration, and data integration, with hands-on experience in modern lakehouse technologies
+          including Databricks, and Microsoft Fabric. Combines strong database fundamentals with application development and cloud
+          engineering experience to build reliable and scalable data solutions.
         </p>
 
         <p className="mt-6">
@@ -230,49 +233,77 @@ export default function HomePage() {
                 <ul className="ml-4 list-outside list-decimal">
                   <li>
                     <p className="hover:font-bold hover:underline">
-                      <a href="https://www.credly.com/badges/3cd6645a-1f84-49cd-ac15-eabcc49815d8/" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://www.credly.com/badges/3cd6645a-1f84-49cd-ac15-eabcc49815d8/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Oracle Database SQL Certified Associate, 2019
                       </a>
                     </p>
                   </li>
                   <li>
                     <p className="hover:font-bold hover:underline">
-                      <a href="https://www.credly.com/badges/cec3b7f0-fb52-4833-a3e6-37fbbb12c881/" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://www.credly.com/badges/cec3b7f0-fb52-4833-a3e6-37fbbb12c881/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Oracle Database 12c Administrator Certified Associate, 2019
                       </a>
                     </p>
                   </li>
                   <li>
                     <p className="hover:font-bold hover:underline">
-                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=649DA108CE13F606455778E4F9FAB1F4DBF94D2B72DA6DD121D5922FE60C8691" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=649DA108CE13F606455778E4F9FAB1F4DBF94D2B72DA6DD121D5922FE60C8691"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Oracle Cloud Infrastructure Foundations 2021 Certified Associate, 2021
                       </a>
                     </p>
                   </li>
                   <li>
                     <p className="hover:font-bold hover:underline">
-                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=E93F5F58652034FA392906BF119A4E3BEDF9ECD42363BE424A95BB3C9DB5F208" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=E93F5F58652034FA392906BF119A4E3BEDF9ECD42363BE424A95BB3C9DB5F208"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Oracle Cloud Infrastructure 2021 Certified Architect Associate, 2021
                       </a>
                     </p>
                   </li>
                   <li>
                     <p className="hover:font-bold hover:underline">
-                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=3AAC18805786E478E7BC4EB0838E1155E80B17614DEA2A079C5C0D8AB3FFBE5F" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=3AAC18805786E478E7BC4EB0838E1155E80B17614DEA2A079C5C0D8AB3FFBE5F"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Oracle Cloud Infrastructure Developer 2021 Certified Associate, 2021
                       </a>
                     </p>
                   </li>
                   <li>
                     <p className="hover:font-bold hover:underline">
-                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=6AAC51B35D3D238BEF379D49D7CFFA71FE3DEE4619115DBBFA503A3DFE90014A" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=6AAC51B35D3D238BEF379D49D7CFFA71FE3DEE4619115DBBFA503A3DFE90014A"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Oracle Cloud Infrastructure 2021 Certified Cloud Operations Associate, 2021
                       </a>
                     </p>
                   </li>
                   <li>
                     <p className="hover:font-bold hover:underline">
-                      <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=ACD97A431F2B677ABF18C4B5B3C2A408199678013048D7A28B5219BB5495A4BF" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=ACD97A431F2B677ABF18C4B5B3C2A408199678013048D7A28B5219BB5495A4BF"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Oracle Autonomous Database Cloud 2021 Certified Specialist, 2021
                       </a>
                     </p>
